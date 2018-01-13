@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.start.ProfileActivity"
+    android:orientation="vertical"
+    android:id="@+id/lin1"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <EditText
+            android:id="@+id/updatesTxt"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+
+            android:background="@drawable/text_rounded"
+            android:scrollbars="vertical"
+            android:shadowColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/addtolistBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/t_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="addtoList"
+            android:text="Add"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:cacheColorHint="@color/colorPrimary"
+        android:scrollbarSize="8dp"
+        android:scrollbarThumbVertical="@drawable/srull" />
+
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/t_button"
+
+        android:drawableBottom="@drawable/back"
+        android:onClick="logoutUser"
+        android:text="Logout"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
